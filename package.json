@@ -1,0 +1,9 @@
+{
+  "name": "wardrobe",
+  "version": "0.1.0",
+  "description": "A simple app for adding/listing clothes, built with Node.js, GraphQL, and React",
+  "main": "index.js",
+  "author": "Panagiotis Panagi",
+  "license": "UNLICENSED",
+  "private": true
+}
