@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS `shirts`;
 CREATE TABLE `shirts` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
-  `color` varchar(64) NOT NULL,
+  `color` enum('white', 'grey', 'blue') NOT NULL,
   `size` int(3) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

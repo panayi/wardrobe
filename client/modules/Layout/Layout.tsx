@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import config from '../../config';
 import theme from '../../styles/theme';
@@ -39,10 +38,6 @@ const Layout: React.FunctionComponent<LayoutProps> = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <Root>
-        <Head>
-          <title>{config.SITE_TITLE}</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
         <GlobalStyle />
         <Header>
           <img src="/images/logo.png" alt={config.SITE_TITLE} />
