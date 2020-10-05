@@ -9,8 +9,8 @@ export const typeDefs = gql`
     createPant(
       name: String!
       color: String!
-      width: Float!
-      length: Float!
+      width: Int!
+      length: Int!
     ): Pant
   }
 
@@ -18,7 +18,7 @@ export const typeDefs = gql`
     id: ID!
     name: String!
     color: String!
-    width: Float!
-    length: Float!
+    width: Int!
+    length: Int!
   }
 `;

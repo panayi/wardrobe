@@ -13,5 +13,6 @@ export const typeDefs = gql`
     id: ID!
     name: String!
     color: String!
+    size: Int!
   }
 `;
