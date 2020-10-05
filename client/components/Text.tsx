@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
+type Variant = 'body' | 'heading' | 'largeHeading';
+
 type TextProps = {
   as?: React.ElementType;
-  variant?: 'body' | 'heading' | 'largeHeading';
+  variant?: Variant;
   className?: string;
   children: React.ReactNode;
 };
 
-const Root = styled.span`
+const Root = styled.span<{ variant: Variant }>`
   font-size: ${(props) => props.theme.fontSizes[props.variant]};
   color: ${(props) => props.theme.colors.text[props.variant]};
 `;

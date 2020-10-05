@@ -8,7 +8,7 @@ type DocumentProps = {
 };
 
 export default class MyDocument extends Document<DocumentProps> {
-  static getInitialProps({ renderPage }) {
+  static getInitialProps({ renderPage }): any {
     // Step 1: Create an instance of ServerStyleSheet
     const sheet = new ServerStyleSheet();
 

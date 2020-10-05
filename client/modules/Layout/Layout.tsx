@@ -10,7 +10,7 @@ type LayoutProps = {
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: ${(props) => props.theme.fontFamily};
+    font-family: ${(props: any) => props.theme.fontFamily};
   }
 `;
 

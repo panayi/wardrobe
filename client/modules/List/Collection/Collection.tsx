@@ -17,7 +17,6 @@ const Root = styled.div`
 
 const Collection: React.FunctionComponent<CollectionProps> = (props) => {
   const { items, getSize } = props;
-  console.log(items);
 
   return (
     <Root>

@@ -13,6 +13,11 @@ type FormProps = {
   onSubmit: (data: any) => void;
 };
 
+const mapInputTypeToComponent = {
+  text: TextInput,
+  number: TextInput,
+};
+
 const Root = styled.form`
   display: flex;
   flex-direction: column;
@@ -34,11 +39,6 @@ const Actions = styled.div`
   justify-content: space-between;
 `;
 
-const mapInputTypeToComponent = {
-  text: TextInput,
-  number: TextInput,
-};
-
 const Form: React.FunctionComponent<FormProps> = (props) => {
   const { fields, onSubmit } = props;
   const { defaultValues, inputs } = useFields(fields);
@@ -57,7 +57,7 @@ const Form: React.FunctionComponent<FormProps> = (props) => {
             <InputComponent
               name={name}
               type={type}
-              registerRef={register}
+              ref={register}
               autoFocus={index === 0}
             />
           </Field>

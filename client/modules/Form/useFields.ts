@@ -1,6 +1,6 @@
 import React from 'react';
 
-const useFields = (fields) => {
+const useFields = (fields: Array<any>) => {
   const defaultValues = React.useMemo(() => {
     return Object.entries(fields).reduce((acc, [name, field]) => {
       acc[name] = field.defaultValue;

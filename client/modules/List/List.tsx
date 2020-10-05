@@ -29,7 +29,6 @@ const List: React.FunctionComponent<unknown> = () => {
   }, []);
 
   const getPantSize = React.useCallback((item) => {
-    console.log(item);
     return `${item.width}/${item.length} (W/L)`;
   }, []);
 

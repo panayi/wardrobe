@@ -6,7 +6,7 @@ type TextInputProps = React.DetailedHTMLProps<
   HTMLInputElement
 >;
 
-const Input = styled.input`
+const Input = styled.input<{ ref: any }>`
   padding: 0.8rem 0.5rem;
   font-size: 1.5rem;
 `;

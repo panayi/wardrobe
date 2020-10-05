@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+type Variant = 'primary' | 'default';
+type Size = 'regular' | 'large';
+
 type ButtonProps = {
   as?: React.ElementType;
-  variant?: 'primary' | 'default';
-  size?: 'regular' | 'large';
+  variant?: Variant;
+  size?: Size;
   type?: string;
   className?: string;
   children: React.ReactNode;
   href?: string;
 };
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<{ variant: Variant; size: Size }>`
   border-radius: 6px;
   box-shadow: none;
   text-decoration: none;
