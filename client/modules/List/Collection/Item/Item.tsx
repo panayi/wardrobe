@@ -5,7 +5,7 @@ import { ItemType } from '../../typings';
 
 type ItemProps = {
   item: ItemType;
-  size: string;
+  size: React.ReactNode | string;
 };
 
 const Box = styled.div`

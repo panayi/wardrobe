@@ -7,7 +7,7 @@ import Layout from '../modules/Layout/Layout';
 
 const Home: React.FunctionComponent<unknown> = () => {
   return (
-    <Layout home>
+    <Layout>
       <List />
     </Layout>
   );

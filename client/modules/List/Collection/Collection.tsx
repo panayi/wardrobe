@@ -5,7 +5,7 @@ import { ListType, ItemType } from '../typings';
 
 type CollectionProps = {
   items: ListType;
-  getSize: (item: ItemType) => React.ReactNode;
+  getSize: (item: ItemType) => React.ReactNode | string;
 };
 
 const Root = styled.div`
@@ -21,8 +21,8 @@ const Collection: React.FunctionComponent<CollectionProps> = (props) => {
 
   return (
     <Root>
-      {items.map((item) => (
-        <Item key={item.id} {...item} size={getSize(item)} />
+      {items.map((item: ItemType) => (
+        <Item key={item.id} item={item} size={getSize(item)} />
       ))}
     </Root>
   );
