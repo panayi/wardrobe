@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-express'
+import { gql } from 'apollo-server-express';
 
 export const typeDefs = gql`
   extend type Query {
@@ -11,7 +11,7 @@ export const typeDefs = gql`
       color: String!
       width: Float!
       length: Float!
-    ): Pant 
+    ): Pant
   }
 
   type Pant {
@@ -21,4 +21,4 @@ export const typeDefs = gql`
     width: Float!
     length: Float!
   }
-`
+`;

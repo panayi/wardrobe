@@ -5,5 +5,21 @@
   "main": "index.js",
   "author": "Panagiotis Panagi",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "start": "ts-node index.ts",
+    "lint": "cd server && yarn lint",
+    "format": "prettier \"**/*.{js,jsx,ts,tsx}\" --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2"
+  }
 }

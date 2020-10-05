@@ -1,0 +1,18 @@
+{
+  "**/*.{js?(x), ts?(x)}": [
+    "prettier --write",
+    "yarn lint"
+  ],
+  "server/**/*.{js?(x), ts?(x)": [
+    "cd server && yarn lint"
+  ],
+  "client/**/*.{js?(x), ts?(x)": [
+    "cd client && yarn lint"
+  ],
+  "**/*.{yml,yaml,md}": [
+    "prettier --write"
+  ],
+  "**/{*.json,.{eslintrc,prettierrc,stylelintrc}}": [
+    "prettier --write --parser json"
+  ]
+}
