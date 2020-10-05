@@ -7,7 +7,7 @@ A simple app built with Node.js, GraphQL, and React.
 1. Clone the repo locally:
 
 ```shell
-git clone https://github.com/panayi/wardrobe.git`
+git clone https://github.com/panayi/wardrobe.git
 ```
 
 2. Run the docker containers with docker-compose:
